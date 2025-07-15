@@ -90,6 +90,12 @@ body {
     box-shadow: 0 1px 4px rgb(0, 0, 0, .5);
 }
 
+.hero__cta:hover {
+    background-color: var(--soft-magenta);
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .hero__contact {
     display: flex;
     gap: 1.5em;
@@ -104,6 +110,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero__link:hover {
+    border-color: var(--soft-magenta);
+    transition: border-color 0.3s ease;
+}
+
+.hero__link:hover .hero__icon {
+    filter: invert(47%) sepia(85%) saturate(1478%) hue-rotate(257deg) brightness(98%) contrast(98%);
 }
 
 .hero__icon {
